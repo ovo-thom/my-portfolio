@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left mt-10 sm:mt-10 md:mt-0 mb-8 md:mb-0 z-10">
             <h1 className="text-2xl text-white sm:text-2xl md:text-2xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 font-semibold">
               <DecryptedText
-                text="Thomas — Développeur Web Freelance"
+                text="Bonjour je suis Thomas"
                 speed={100}
                 maxIterations={20}
                 animateOn="view"
@@ -29,10 +29,7 @@ const Hero = () => {
               />
             </h1>
             <p className="text-gray-300 text-lg sm:text-xl md:text-xl font-light lg:text-2xl mb-2">
-              Spécialisé React, Next.js & Tailwind CSS
-            </p>
-            <p className="text-gray-400 text-base sm:text-lg md:text-lg font-light lg:text-xl">
-              Création de sites vitrines modernes & performants
+              Développeur web Front-End React / Next.js
             </p>
           </div>
           <div className="relative z-30 flex justify-center items-center md:mt-0 mt-6">

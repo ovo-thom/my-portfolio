@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
-import homepage from "../assets/popcornmovie/homepage_popcornmovie.png";
+import homepage from "../assets/popcornmovie/home_popcornmovie.png";
 import craftifyHome from "../images/craftify-home.png";
 import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";

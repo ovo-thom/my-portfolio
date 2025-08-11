@@ -20,6 +20,15 @@ import logosSection from "../assets/doml/logosSection.png"
 import templateDomlResponsiv from "../assets/doml/templateDomlResponsiv.png"
 import headerResponsiv from "../assets/doml/headerResponsiv.png"
 import contactResponsiv from "../assets/doml/contactResponsiv.png"
+import homepage from "../assets/la_casa_di_toma/homepage.png"
+import navHero from "../assets/la_casa_di_toma/navhero.png"
+import pizzaPasta from "../assets/la_casa_di_toma/PizzaPasta.png"
+import welcomeAbout from "../assets/la_casa_di_toma/welcomeabout.png"
+import recommandation from "../assets/la_casa_di_toma/recommandation.png"
+import panier from "../assets/la_casa_di_toma/panier.png"
+import contactFooter from "../assets/la_casa_di_toma/contactfooter.png"
+
+
 const projects = [
   {
     id: 1,
@@ -100,7 +109,7 @@ const projects = [
     description:
       "Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive. Des animations d’apparition au scroll apportent du dynamisme, renforçant l’aspect interactif et moderne du site. Ce projet illustre la capacité à reproduire des maquettes UI complexes, à organiser un code scalable, et à intégrer des effets visuels avancés pour valoriser l’image d’une marque.",
     image: templateDoml,
-    imageList: [header, contactLogos, logosSection, templateDomlResponsiv, headerResponsiv, contactResponsiv],
+    imageList: [header, panier, contactLogos, logosSection, templateDomlResponsiv, headerResponsiv, contactResponsiv],
     technologies: [
       "Next.js (React)",
       "Tailwind",
@@ -111,6 +120,25 @@ const projects = [
     ],
     demoLink: "https://doml-ochre.vercel.app/",
     codeLink: "https://github.com/ovo-thom/doml",
+  },
+  {
+    id: 6,
+    title: "La Casa Di Toma",
+    description:
+      "Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive. Des animations d’apparition au scroll apportent du dynamisme, renforçant l’aspect interactif et moderne du site. Ce projet illustre la capacité à reproduire des maquettes UI complexes, à organiser un code scalable, et à intégrer des effets visuels avancés pour valoriser l’image d’une marque.",
+    image: homepage,
+    imageList: [homepage, navHero, welcomeAbout, pizzaPasta, recommandation, contactFooter],
+    technologies: [
+      "React 18",
+      "TypeScript",
+      "Tailwind",
+      "Vite",
+      "Framer Motion",
+      "Context API",
+      "Animation au scroll"
+    ],
+    demoLink: "https://la-casa-di-toma.vercel.app/",
+    codeLink: "https://github.com/ovo-thom/la-casa-di-toma",
   },
 ];
 

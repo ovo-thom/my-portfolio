@@ -8,8 +8,9 @@ import "swiper/css/pagination";
 
 import homepage from "../assets/popcornmovie/home_popcornmovie.png";
 import craftifyHome from "../images/craftify-home.png";
-import headphones from "../images/Headphones.png";
+// import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";
+import laCasaDiToma from "../assets/la_casa_di_toma/homepage.png";
 
 import { EffectCube, Pagination } from "swiper/modules";
 
@@ -80,6 +81,56 @@ export default function Projects() {
               </div>
               <div className="py-3 mb-4 rounded-lg">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                  La Casa Di Toma
+                </h2>
+                <p className="mb-4 text-gray-100 text-base">
+                  <span className="italic font-light text-blue-600 ">
+                    La Casa Di Toma :
+                  </span>{" "}
+                  Application web moderne pour restaurant italien construite
+                  avec React 18 et TypeScript. Le projet intègre un système de
+                  panier complet avec gestion d&apos;état via Context API,
+                  permettant l&apos;ajout, modification et suppression
+                  d&apos;articles.
+                </p>
+                <Link
+                  to="/projects/6"
+                  className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
+                >
+                  → Voir le projet en détail
+                </Link>
+                {/* <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                  Headphones
+                </h2>
+                <p className="mb-4 text-gray-100 text-base">
+                  <span className="italic font-light text-blue-600 ">
+                    Headphones :
+                  </span>{" "}
+                  Reproduction d’un site vitrine de casques audio à partir d’une
+                  maquette, réalisée en HTML et CSS, avec un peu de JavaScript
+                  pour une navbar dynamique offrant une meilleure expérience
+                  utilisateur.
+                </p> */}
+              </div>
+
+              <div className="py-3 mb-4 rounded-lg">
+                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                  LifeStyle Fitness
+                </h2>
+                <p className="mb-4 text-gray-100 text-base">
+                  <span className="italic font-light text-blue-600 ">
+                    LifeStyle fitness :
+                  </span>{" "}
+                  Réalisation d’une page web à partir d’une maquette Figma pour
+                  LifeStyle Fitness, une chaîne de salles de sport reconnue. Le
+                  projet a été développé avec Next.js et Tailwind CSS, en
+                  version responsive pour desktop et mobile. Un formulaire a
+                  également été intégré pour permettre aux utilisateurs
+                  d’obtenir un pass gratuit.
+                </p>
+              </div>
+              <div className="py-3 mb-4 rounded-lg">
+                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
                   Craftify
                 </h2>
                 <p className="mb-4 text-gray-100 text-base">
@@ -100,38 +151,6 @@ export default function Projects() {
                 >
                   → Portfolio du projet
                 </a>
-              </div>
-
-              <div className="py-3 mb-4 rounded-lg">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  LifeStyle Fitness
-                </h2>
-                <p className="mb-4 text-gray-100 text-base">
-                  <span className="italic font-light text-blue-600 ">
-                    LifeStyle fitness :
-                  </span>{" "}
-                  Réalisation d’une page web à partir d’une maquette Figma pour
-                  LifeStyle Fitness, une chaîne de salles de sport reconnue. Le
-                  projet a été développé avec Next.js et Tailwind CSS, en
-                  version responsive pour desktop et mobile. Un formulaire a
-                  également été intégré pour permettre aux utilisateurs
-                  d’obtenir un pass gratuit.
-                </p>
-              </div>
-
-              <div className="py-3 mb-4 rounded-lg">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  Headphones
-                </h2>
-                <p className="mb-4 text-gray-100 text-base">
-                  <span className="italic font-light text-blue-600 ">
-                    Headphones :
-                  </span>{" "}
-                  Reproduction d’un site vitrine de casques audio à partir d’une
-                  maquette, réalisée en HTML et CSS, avec un peu de JavaScript
-                  pour une navbar dynamique offrant une meilleure expérience
-                  utilisateur.
-                </p>
               </div>
             </div>
 
@@ -167,11 +186,17 @@ export default function Projects() {
                   <SwiperSlide className="flex justify-center items-center w-full h-full">
                     <div className="w-full h-full flex justify-center items-center">
                       <img
-                        src={craftifyHome}
-                        alt="Craftify Home"
+                        src={laCasaDiToma}
+                        alt="Headphones"
                         className="w-full h-full object-cover object-top cursor-pointer"
-                        onClick={() => openModal(craftifyHome)}
+                        onClick={() => openModal(laCasaDiToma)}
                       />
+                      {/* <img
+                        src={headphones}
+                        alt="Headphones"
+                        className="w-full h-full object-cover object-top cursor-pointer"
+                        onClick={() => openModal(headphones)}
+                      /> */}
                     </div>
                   </SwiperSlide>
 
@@ -185,14 +210,13 @@ export default function Projects() {
                       />
                     </div>
                   </SwiperSlide>
-
                   <SwiperSlide className="flex justify-center items-center w-full h-full">
                     <div className="w-full h-full flex justify-center items-center">
                       <img
-                        src={headphones}
-                        alt="Headphones"
+                        src={craftifyHome}
+                        alt="Craftify Home"
                         className="w-full h-full object-cover object-top cursor-pointer"
-                        onClick={() => openModal(headphones)}
+                        onClick={() => openModal(craftifyHome)}
                       />
                     </div>
                   </SwiperSlide>

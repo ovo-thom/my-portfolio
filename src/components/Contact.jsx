@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact-section bg-gradient-to-br from-gray-950 via-slate-950 to-black text-gray-400"
+      className="contact-section bg-gradient-to-br from-gray-950 via-slate-950 to-black text-gray-400 py-16 md:py-20"
     >
-      <div className="flex flex-col max-w-6xl mx-auto lg:flex-row pt-8 px-8 space-y-6 lg:space-y-0 lg:space-x-8 lg:items-stretch">
+      <div className="flex flex-col max-w-6xl mx-auto lg:flex-row px-8 space-y-6 lg:space-y-0 lg:space-x-8 lg:items-stretch">
         <div className="contact-left lg:w-1/2">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 h-full flex flex-col justify-between">
             <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl mb-5 md:mb-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="bg-white/5 max-w-6xl w-full mx-auto backdrop-blur-sm border border-white/10 rounded-xl p-6 mt-8 mb-0 hover:bg-white/10 transition-all duration-300">
+      <div className="bg-white/5 max-w-6xl w-[85%] sm:w-full mx-auto backdrop-blur-sm border border-white/10 rounded-xl p-6 mt-8 mb-0 hover:bg-white/10 transition-all duration-300">
         <div className="flex items-center justify-center mb-4">
           <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
           <h3 className="text-white text-lg font-semibold">

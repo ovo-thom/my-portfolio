@@ -20,67 +20,133 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 1.8, ease: "easeOut" }}
           >
-            <div className="relative">
+            <div className="relative mb-10">
               <img
                 src={codingnight}
                 alt="About me"
-                className="rounded-full mx-auto h-56 sm:h-64 md:h-72 w-auto shadow-2xl lg:h-96 lg:min-w-72 border-2 border-white/20"
+                className="rounded-full mx-auto h-56 sm:h-64 md:h-72 w-auto shadow-2xl lg:h-96 lg:min-w-72 border-4 border-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-pulse"
               />
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl -z-10"></div>
+
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-xl -z-10 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-600/20 blur-2xl -z-20"></div>
+
+              <div className="absolute -top-2 -right-2 w-3 h-3 bg-blue-400 rounded-full animate-bounce delay-75"></div>
+              <div className="absolute -bottom-4 -left-3 w-2 h-2 bg-purple-400 rounded-full animate-bounce delay-150"></div>
+              <div className="absolute top-1/4 -right-4 w-1 h-1 bg-pink-400 rounded-full animate-ping delay-300"></div>
+
+              <div
+                className="absolute inset-0 rounded-full border-2 border-dashed border-cyan-400/50 animate-spin"
+                style={{ animationDuration: "20s" }}
+              ></div>
             </div>
           </motion.div>
 
           <div className="md:w-full w-full p-4 md:py-12">
             <div className="text-base w-[90%] mx-auto md:text-lg lg:text-xl leading-relaxed mb-8 space-y-6">
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+              <div className="bg-gradient-to-r from-blue-500/8 via-cyan-500/8 to-blue-500/8 backdrop-blur-sm border border-blue-400/20 rounded-xl p-6 hover:bg-gradient-to-r hover:from-blue-500/15 hover:via-cyan-500/15 hover:to-blue-500/15 transition-all duration-300 shadow-md shadow-blue-500/10">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
-                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 animate-pulse"></span>
                   Objectif professionnel
+                  <span className="ml-3 text-xs bg-gradient-to-r from-blue-400 to-cyan-400 text-white px-2 py-1 rounded-full font-medium">
+                    Disponible
+                  </span>
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Développeur web front-end junior spécialisé en React, Nextjs
+                  Développeur web front-end junior spécialisé en React, Next.js
                   et Tailwind CSS,{" "}
-                  <span className="text-blue-400 font-medium bg-blue-400/10 px-2 py-1 rounded">
+                  <span className="text-blue-400 font-medium bg-blue-400/15 px-3 py-1 rounded-lg">
                     je suis actuellement à la recherche d&apos;un poste
                   </span>{" "}
                   où je pourrai mettre à profit mes compétences tout en
-                  continuant à évoluer dans un environnement dynamique.
-                  Enthousiaste à l&apos;idée de rejoindre une équipe dynamique,
-                  j&apos;ai à cœur de partager mes idées, d&apos;apprendre de
-                  mes collègues et de contribuer à une atmosphère de travail
-                  positive.
+                  continuant à évoluer. Enthousiaste à l&apos;idée de rejoindre
+                  une équipe, j&apos;ai à cœur de partager mes idées et
+                  d&apos;apprendre de mes collègues pour contribuer à des
+                  projets innovants.
                 </p>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+              <div className="bg-gradient-to-r from-green-500/8 via-purple-500/8 to-green-500/8 backdrop-blur-sm border border-green-400/20 rounded-xl p-6 hover:bg-gradient-to-r hover:from-green-500/15 hover:via-purple-500/15 hover:to-green-500/15 transition-all duration-300 shadow-md shadow-green-500/10">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
-                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                  <span className="w-2 h-2 bg-gradient-to-r from-green-400 to-purple-400 rounded-full mr-3 animate-pulse"></span>
                   Compétences et formation
+                  <span className="ml-3 text-xs bg-gradient-to-r from-green-400 to-purple-400 text-white px-2 py-1 rounded-full font-medium">
+                    BeCode
+                  </span>
                 </h3>
-                <p className="text-gray-300 text-base leading-relaxed">
-                  Diplômé de BeCode, j&apos;ai développé une expertise en
-                  front-end grâce à une pédagogie active favorisant
-                  l&apos;autonomie et la collaboration. J&apos;ai maîtrisé des
-                  technologies comme HTML, CSS, JavaScript ainsi que React, et
-                  réalisé un projet de site e-commerce intégrant des
-                  fonctionnalités modernes et responsive.
-                </p>
+                <div className="text-gray-300 text-base leading-relaxed space-y-2">
+                  <p>
+                    <strong className="text-white">Formation :</strong> Diplômé
+                    de BeCode avec une pédagogie active favorisant
+                    l&apos;autonomie et la collaboration.
+                  </p>
+                  <p>
+                    <strong className="text-white">Technologies :</strong>{" "}
+                    HTML5, CSS3, JavaScript ES6+, React, Next.js, TypeScript,
+                    Tailwind CSS, Git, Vite.
+                  </p>
+                  <p>
+                    <strong className="text-white">Projet clé :</strong> Site
+                    e-commerce complet avec panier, authentification et design
+                    responsive.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
+              <div className="bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-blue-500/10 backdrop-blur-sm border-2 border-pink-400/30 rounded-xl p-6 hover:bg-gradient-to-r hover:from-pink-500/20 hover:via-purple-500/20 hover:to-blue-500/20 transition-all duration-300 shadow-lg shadow-pink-500/20">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
-                  <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
+                  <span className="w-3 h-3 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full mr-3 animate-pulse"></span>
                   Expérience professionnelle
+                  <span className="ml-3 text-sm bg-gradient-to-r from-pink-400 to-purple-400 text-white px-3 py-1 rounded-full font-medium">
+                    Stage 3 mois
+                  </span>
                 </h3>
-                <p className="text-gray-300 text-base leading-relaxed">
-                  Lors de mon stage chez Pixel Drive, j&apos;ai contribué au
-                  développement de Progressive Web Apps en utilisant des
-                  concepts avancés comme les server components et server
-                  actions. J&apos;ai intégré des projets Next.js avec
-                  internationalisation et conçu des maquettes responsive. La
-                  gestion des versions et le travail collaboratif se faisaient
-                  avec Git et GitHub.
-                </p>
+                <div className="text-gray-300 text-base leading-relaxed space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-pink-400 font-bold text-lg mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong className="text-white">
+                        Progressive Web Apps
+                      </strong>{" "}
+                      avec Next.js (server components et server actions)
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-purple-400 font-bold text-lg mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong className="text-white">
+                        Développement interface
+                      </strong>{" "}
+                      du projet Lifestyle Fitness en intégrant les maquettes
+                      Figma (desktop/mobile) avec Tailwind CSS
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-blue-400 font-bold text-lg mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong className="text-white">
+                        Système de traduction
+                      </strong>{" "}
+                      multilingue français/anglais
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-cyan-400 font-bold text-lg mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong className="text-white">
+                        Environnement collaboratif
+                      </strong>{" "}
+                      Git/GitHub avec code reviews et pull requests
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

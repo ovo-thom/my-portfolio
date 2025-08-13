@@ -125,7 +125,7 @@ const projects = [
     id: 6,
     title: "La Casa Di Toma",
     description:
-      "Application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel.",
+      "La Casa Di Toma est une application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel.",
     image: homepage,
     imageList: [homepage, navHero, welcomeAbout, pizzaPasta, recommandation, contactFooter],
     technologies: [

@@ -11,6 +11,10 @@ import craftifyHome from "../images/craftify-home.png";
 // import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";
 import laCasaDiToma from "../assets/la_casa_di_toma/homepage.png";
+import { LuPopcorn } from "react-icons/lu";
+import { CiPizza } from "react-icons/ci";
+import { MdFitnessCenter } from "react-icons/md";
+import { GiStoneCrafting } from "react-icons/gi";
 
 import { EffectCube, Pagination } from "swiper/modules";
 
@@ -58,10 +62,15 @@ export default function Projects() {
           </h2>
           <div className="w-full flex flex-col md:items-center lg:flex-row">
             <div className="project-description text-xl lg:w-1/2 px-5">
-              <div className="py-3 mb-4 rounded-lg">
-                <p className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  Popcorn Movie
-                </p>
+              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-baseline space-x-3">
+                  <p className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                    Popcorn Movie
+                  </p>
+                  <span className="text-cyan-400 text-lg sm:text-lg">
+                    <LuPopcorn />
+                  </span>
+                </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
                     PopCorn Movie :
@@ -79,10 +88,15 @@ export default function Projects() {
                   → Voir le projet en détail
                 </Link>
               </div>
-              <div className="py-3 mb-4 rounded-lg">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  La Casa Di Toma
-                </h2>
+              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-baseline space-x-3">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                    La Casa Di Toma
+                  </h2>
+                  <span className="text-red-400 text-lg sm:text-xl">
+                    <CiPizza />
+                  </span>
+                </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
                     La Casa Di Toma :
@@ -113,10 +127,15 @@ export default function Projects() {
                 </p> */}
               </div>
 
-              <div className="py-3 mb-4 rounded-lg">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  LifeStyle Fitness
-                </h2>
+              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-baseline space-x-3">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                    LifeStyle Fitness
+                  </h2>
+                  <span className="text-indigo-400 text-lg sm:text-xl">
+                    <MdFitnessCenter />
+                  </span>
+                </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
                     LifeStyle fitness :
@@ -129,10 +148,15 @@ export default function Projects() {
                   d’obtenir un pass gratuit.
                 </p>
               </div>
-              <div className="py-3 mb-4 rounded-lg">
-                <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  Craftify
-                </h2>
+              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-baseline space-x-3">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                    Craftify
+                  </h2>
+                  <span className="text-amber-400 text-lg sm:text-xl">
+                    <GiStoneCrafting />
+                  </span>
+                </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
                     Craftify :

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Training() {
   return (
-    <section className="bg-gradient-to-br from-gray-950 via-slate-950 to-black px-4 sm:px-6 lg:px-10 py-20 md:py-24 lg:py-28">
+    <section className="bg-gradient-to-br from-gray-950 via-slate-950 to-black px-4 sm:px-6 lg:px-10 py-20 md:py-20 lg:py-20">
       <div className="max-w-6xl w-full mx-auto">
-        <h2 className="title-night text-2xl sm:text-3xl lg:text-5xl font-bold text-center py-3 mb-12 md:mb-16 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+        <h2 className="title-night text-2xl sm:text-3xl lg:text-5xl font-bold text-center py-3 mb-12 md:mb-12 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           Training & Education
         </h2>
 

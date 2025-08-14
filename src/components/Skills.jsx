@@ -22,10 +22,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="relative py-20 md:py-24 lg:py-28 bg-gradient-to-br from-gray-950 via-slate-950 to-black">
+    <section id="skills" className="relative py-20 md:py-20 lg:py-20 bg-gradient-to-br from-gray-950 via-slate-950 to-black">
       <div className="background-filter"></div>
       <div className="sectionskills container relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
-        <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-16 md:mb-20 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+        <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-16 md:mb-16 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           Skills
         </h2>
         
@@ -54,7 +54,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="mt-16 md:mt-20 bg-gradient-to-r from-purple-500/8 via-blue-500/8 to-purple-500/8 backdrop-blur-sm border border-purple-400/20 rounded-xl p-8 sm:p-8 md:p-10 hover:bg-gradient-to-r hover:from-purple-500/15 hover:via-blue-500/15 hover:to-purple-500/15 transition-all duration-300 shadow-md shadow-purple-500/10">
+        <div className="mt-16 md:mt-16 bg-gradient-to-r from-purple-500/8 via-blue-500/8 to-purple-500/8 backdrop-blur-sm border border-purple-400/20 rounded-xl p-8 sm:p-8 md:p-8 hover:bg-gradient-to-r hover:from-purple-500/15 hover:via-blue-500/15 hover:to-purple-500/15 transition-all duration-300 shadow-md shadow-purple-500/10">
           <h3 className="text-lg sm:text-xl font-semibold text-white flex items-center justify-center mb-6 md:mb-8">
             <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full mr-3 animate-pulse"></span>
             Compétences en développement

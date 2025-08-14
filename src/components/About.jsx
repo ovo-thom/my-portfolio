@@ -5,10 +5,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="about-section w-full h-auto py-16 md:py-20 bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white sm:pl-10"
+      className="about-section w-full h-auto py-20 md:py-24 lg:py-28 bg-gradient-to-br from-gray-950 via-slate-950 to-black text-white sm:pl-10"
     >
       <div className="w-full px-2 max-w-6xl mx-auto">
-        <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
+        <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-16 md:mb-20 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
           About me
         </h2>
 
@@ -41,8 +41,8 @@ const About = () => {
             </div>
           </motion.div>
 
-          <div className="md:w-full w-full p-4 md:py-12">
-            <div className="text-base w-[90%] mx-auto md:text-lg lg:text-xl leading-relaxed mb-8 space-y-6">
+          <div className="md:w-full w-full p-4 md:py-16">
+            <div className="text-base w-[90%] mx-auto md:text-lg lg:text-xl leading-relaxed mb-8 space-y-8 md:space-y-10">
               <div className="bg-gradient-to-r from-blue-500/8 via-cyan-500/8 to-blue-500/8 backdrop-blur-sm border border-blue-400/20 rounded-xl p-6 hover:bg-gradient-to-r hover:from-blue-500/15 hover:via-cyan-500/15 hover:to-blue-500/15 transition-all duration-300 shadow-md shadow-blue-500/10">
                 <h3 className="text-lg sm:text-xl md:text-2xl mb-4 font-semibold text-white flex items-center">
                   <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 animate-pulse"></span>

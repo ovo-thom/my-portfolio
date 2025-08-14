@@ -55,14 +55,14 @@ export default function Projects() {
         </div>
       )}
 
-      <section id="projects" className="project w-full py-16 md:py-20">
+      <section id="projects" className="project w-full py-20 md:py-24 lg:py-28">
         <div className="max-w-7xl mx-auto w-full">
-          <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl sm:my-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
+          <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl sm:my-16 md:my-20 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
             My Projects
           </h2>
           <div className="w-full flex flex-col md:items-center lg:flex-row">
             <div className="project-description text-xl lg:w-1/2 px-5">
-              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+              <div className="py-4 mb-8 md:mb-10 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 sm:p-6 md:p-8 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="flex items-baseline space-x-3">
                   <p className="text-xl sm:text-2xl font-semibold mb-2 text-white">
                     Popcorn Movie
@@ -93,7 +93,7 @@ export default function Projects() {
                   <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
                     La Casa Di Toma
                   </h2>
-                  <span className="text-red-400 text-lg sm:text-xl">
+                  <span className="text-red-400 text-lg sm:text-2xl">
                     <CiPizza />
                   </span>
                 </div>

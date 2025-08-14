@@ -7,9 +7,11 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative text-white h-screen flex flex-col md:flex-row items-center justify-center md:justify-between"
+      className="relative text-white flex flex-col md:flex-row items-center justify-center md:justify-between"
+      style={{ height: '100vh', maxHeight: '800px', minHeight: '600px' }}
     >
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-slate-950 to-black">
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-slate-950 to-black overflow-hidden"
+           style={{ maxHeight: '800px' }}>
         <CosmicBackground starDensity={180} shootingStarFrequency={0.003} />
       </div>
 

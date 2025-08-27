@@ -109,7 +109,7 @@ const projects = [
     description:
       "Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive. Des animations d’apparition au scroll apportent du dynamisme, renforçant l’aspect interactif et moderne du site. Ce projet illustre la capacité à reproduire des maquettes UI complexes, à organiser un code scalable, et à intégrer des effets visuels avancés pour valoriser l’image d’une marque.",
     image: templateDoml,
-    imageList: [header, panier, contactLogos, logosSection, templateDomlResponsiv, headerResponsiv, contactResponsiv],
+    imageList: [header, contactLogos, logosSection, templateDomlResponsiv, headerResponsiv, contactResponsiv],
     technologies: [
       "Next.js (React)",
       "Tailwind",
@@ -127,7 +127,7 @@ const projects = [
     description:
       "La Casa Di Toma est une application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel.",
     image: homepage,
-    imageList: [homepage, navHero, welcomeAbout, pizzaPasta, recommandation, contactFooter],
+    imageList: [homepage, panier, navHero, welcomeAbout, pizzaPasta, recommandation, contactFooter],
     technologies: [
       "React 18",
       "TypeScript",

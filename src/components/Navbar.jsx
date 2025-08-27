@@ -1,18 +1,43 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  // Gestion du scroll vers la section après navigation
+  useEffect(() => {
+    const section = sessionStorage.getItem("scrollToSection");
+    if (location.pathname === "/" && section) {
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+      sessionStorage.removeItem("scrollToSection");
+    }
+  }, [location]);
+
+  // Fonction pour gérer le clic sur une section
+  const handleSectionClick = (sectionId) => {
+    if (location.pathname !== "/") {
+      sessionStorage.setItem("scrollToSection", sectionId);
+      navigate("/");
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setIsOpen(false); // ferme le menu burger si ouvert
   };
 
   useEffect(() => {
@@ -49,38 +74,34 @@ const Navbar = () => {
 
           {/* Menu pour les grands écrans */}
           <div className="text-xl">
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+            <button
+              onClick={() => handleSectionClick("about")}
+              className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              style={{ background: "none", padding: 0, cursor: "pointer" }}
             >
               About
-            </ScrollLink>
-            <ScrollLink
-              to="skills"
-              smooth={true}
-              duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+            </button>
+            <button
+              onClick={() => handleSectionClick("skills")}
+              className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              style={{ background: "none", padding: 0, cursor: "pointer" }}
             >
               Skills
-            </ScrollLink>
-            <ScrollLink
-              to="projects"
-              smooth={true}
-              duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+            </button>
+            <button
+              onClick={() => handleSectionClick("projects")}
+              className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              style={{ background: "none", padding: 0, cursor: "pointer" }}
             >
               Projects
-            </ScrollLink>
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="ml-6 relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+            </button>
+            <button
+              onClick={() => handleSectionClick("contact")}
+              className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
+              style={{ background: "none", padding: 0, cursor: "pointer" }}
             >
               Contact
-            </ScrollLink>
+            </button>
           </div>
         </div>
       </nav>
@@ -114,42 +135,34 @@ const Navbar = () => {
         {/* Menu burger pour les petits écrans */}
         {isOpen && (
           <div className="bg-black/20 text-white flex flex-col items-center text-lg py-4">
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-              className="hover:underline py-2 border-b border-b-blue-500 w-full text-center"
+            <button
+              onClick={() => handleSectionClick("about")}
+              className="hover:underline py-2 border-b border-b-blue-500 w-full text-center bg-transparent"
+              style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               About
-            </ScrollLink>
-            <ScrollLink
-              to="skills"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-              className="hover:underline py-2 w-full border-b border-b-purple-500 text-center"
+            </button>
+            <button
+              onClick={() => handleSectionClick("skills")}
+              className="hover:underline py-2 w-full border-b border-b-purple-500 text-center bg-transparent"
+              style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               Skills
-            </ScrollLink>
-            <ScrollLink
-              to="projects"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-              className="hover:underline py-2 w-full border-b border-b-pink-500 text-center"
+            </button>
+            <button
+              onClick={() => handleSectionClick("projects")}
+              className="hover:underline py-2 w-full border-b border-b-pink-500 text-center bg-transparent"
+              style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               Projects
-            </ScrollLink>
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-              className="py-2 w-full text-center"
+            </button>
+            <button
+              onClick={() => handleSectionClick("contact")}
+              className="py-2 w-full text-center bg-transparent"
+              style={{ background: "none", border: "none", cursor: "pointer" }}
             >
               Contact
-            </ScrollLink>
+            </button>
           </div>
         )}
       </div>

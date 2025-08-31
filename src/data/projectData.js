@@ -27,6 +27,7 @@ import welcomeAbout from "../assets/la_casa_di_toma/welcomeabout.png";
 import recommandation from "../assets/la_casa_di_toma/recommandation.png";
 import panier from "../assets/la_casa_di_toma/panier.png";
 import contactFooter from "../assets/la_casa_di_toma/contactfooter.png";
+import notificationPush from "../assets/la_casa_di_toma/notification_push.png"
 
 const projects = [
   {
@@ -131,8 +132,8 @@ const projects = [
     id: 6,
     title: "La Casa Di Toma",
     description:
-      "La Casa Di Toma est une application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel.",
-    image: homepage,
+      "La Casa Di Toma est une application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel. Une Progressive Web App (PWA) a été implémentée, permettant l'installation sur mobile et bureau, ainsi qu'une notification push personnalisée pour informer les utilisateurs des nouveautés.",
+  image: homepage,
     imageList: [
       homepage,
       panier,
@@ -141,10 +142,13 @@ const projects = [
       pizzaPasta,
       recommandation,
       contactFooter,
+      notificationPush
     ],
     technologies: [
       "React 18",
       "TypeScript",
+      "PWA",
+      "Notification Push",
       "Tailwind",
       "Vite",
       "Framer Motion",

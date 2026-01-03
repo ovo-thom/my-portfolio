@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 
 import homepage from "../assets/popcornmovie/home_popcornmovie.png";
 import craftifyHome from "../images/craftify-home.png";
-// import headphones from "../images/Headphones.png";
 import lifestyle from "../images/lifestyle.png";
 import laCasaDiToma from "../assets/la_casa_di_toma/homepage.png";
 import { LuPopcorn } from "react-icons/lu";
@@ -113,18 +112,6 @@ export default function Projects() {
                 >
                   → Voir le projet en détail
                 </Link>
-                {/* <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                  Headphones
-                </h2>
-                <p className="mb-4 text-gray-100 text-base">
-                  <span className="italic font-light text-blue-600 ">
-                    Headphones :
-                  </span>{" "}
-                  Reproduction d’un site vitrine de casques audio à partir d’une
-                  maquette, réalisée en HTML et CSS, avec un peu de JavaScript
-                  pour une navbar dynamique offrant une meilleure expérience
-                  utilisateur.
-                </p> */}
               </div>
 
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
@@ -215,12 +202,6 @@ export default function Projects() {
                         className="w-full h-full object-cover object-top cursor-pointer"
                         onClick={() => openModal(laCasaDiToma)}
                       />
-                      {/* <img
-                        src={headphones}
-                        alt="Headphones"
-                        className="w-full h-full object-cover object-top cursor-pointer"
-                        onClick={() => openModal(headphones)}
-                      /> */}
                     </div>
                   </SwiperSlide>
 

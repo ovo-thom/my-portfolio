@@ -27,41 +27,61 @@ import welcomeAbout from "../assets/la_casa_di_toma/welcomeabout.png";
 import recommandation from "../assets/la_casa_di_toma/recommandation.png";
 import panier from "../assets/la_casa_di_toma/panier.png";
 import contactFooter from "../assets/la_casa_di_toma/contactfooter.png";
-import notificationPush from "../assets/la_casa_di_toma/notification_push.png"
+import notificationPush from "../assets/la_casa_di_toma/notification_push.png";
 
 const projects = [
   {
     id: 1,
-    title: "Daily Dashboard",
+    title: "La Casa Di Toma",
+    featured: true,
     description:
-      "Daily Dashboard : est une application web qui aide les utilisateurs à structurer leur journée et rester motivés. Elle regroupe plusieurs outils pratiques : une to-do list pour les tâches quotidiennes, un champ 'focus du jour', une citation inspirante renouvelée chaque jour, ainsi qu’un système complet d’alarme, chronomètre et minuteur.L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather.L’interface est claire, responsive, et pensée pour favoriser l’organisation, la concentration et le bien-être au quotidien.",
-    image: dailyDashboard,
-    imageList: [dailyDashboard, chrono, alarme, timer],
-    technologies: [
-      "Next.js (React)",
-      "Tailwind",
-      "API OpenWeather",
-      "CLSx",
-      "LocalStorage",
-      "Vercel",
-      "Github",
+      "La Casa Di Toma est une application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel. Une Progressive Web App (PWA) a été implémentée, permettant l'installation sur mobile et bureau, ainsi qu'une notification push personnalisée pour informer les utilisateurs des nouveautés.",
+    image: homepage,
+    imageList: [
+      homepage,
+      panier,
+      navHero,
+      welcomeAbout,
+      pizzaPasta,
+      recommandation,
+      contactFooter,
+      notificationPush,
     ],
-    demoLink: "https://daily-dashboard-xi.vercel.app",
-    codeLink: "https://github.com/ovo-thom/daily-dashboard",
+    technologies: [
+      "React 18",
+      "TypeScript",
+      "PWA",
+      "Notification Push",
+      "Tailwind",
+      "Vite",
+      "Framer Motion",
+      "Context API",
+      "Animation au scroll",
+    ],
+    demoLink: "https://la-casa-di-toma.vercel.app/",
+    codeLink: "https://github.com/ovo-thom/la-casa-di-toma",
   },
+  // {
+  //   id: 1,
+  //   title: "Daily Dashboard",
+  //   description:
+  //     "Daily Dashboard : est une application web qui aide les utilisateurs à structurer leur journée et rester motivés. Elle regroupe plusieurs outils pratiques : une to-do list pour les tâches quotidiennes, un champ 'focus du jour', une citation inspirante renouvelée chaque jour, ainsi qu’un système complet d’alarme, chronomètre et minuteur.L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather.L’interface est claire, responsive, et pensée pour favoriser l’organisation, la concentration et le bien-être au quotidien.",
+  //   image: dailyDashboard,
+  //   imageList: [dailyDashboard, chrono, alarme, timer],
+  //   technologies: [
+  //     "Next.js (React)",
+  //     "Tailwind",
+  //     "API OpenWeather",
+  //     "CLSx",
+  //     "LocalStorage",
+  //     "Vercel",
+  //     "Github",
+  //   ],
+  //   demoLink: "https://daily-dashboard-xi.vercel.app",
+  //   codeLink: "https://github.com/ovo-thom/daily-dashboard",
+  // },
   {
     id: 2,
-    title: "Incident-Manager",
-    description:
-      "Incident Manager : est une application de gestion d’incidents permettant de créer, filtrer, modifier et supprimer des signalements. Elle propose une interface claire pour suivre le statut des incidents (ouvert / résolu), avec affichage automatique de la date de résolution. Le tout est construit avec React et Tailwind CSS, en adoptant des composants modulaires et une gestion d’état efficace via useState.",
-    image: gestionIncident,
-    imageList: [filterIncident, formIncident, gestionIncident],
-    technologies: ["Next.js (React)", "Tailwind", "createPortal"],
-    // demoLink: "",
-    codeLink: "https://github.com/ovo-thom/incident-manager",
-  },
-  {
-    id: 3,
     title: "Popcorn Movie",
     description:
       "PopCorn Movie : est une application web moderne de découverte de films, développée avec Next.js et stylisée via Tailwind CSS. Elle s'appuie sur l'API de TMDb (The Movie Database) pour récupérer en temps réel les derniers films à l'affiche, les tendances du moment, et les résultats de recherche personnalisés. L'utilisateur peut rechercher des films grâce à une barre de recherche interactive, parcourir les films 'Now Playing' dans un slider responsive utilisant Swiper avec des animations fluides, et ajouter des films en favoris en un clic via une icône cœur avec persistance des données grâce au LocalStorage. L'application offre une expérience responsive optimisée sur tous les appareils. Le projet met en avant une architecture modulaire et propre, avec des composants réutilisables comme MovieCard, une gestion asynchrone des données à travers des fonctions dédiées (fetchNowPlayingMovie, fetchSearchMovies), et une intégration soignée du design UI pour une expérience utilisateur moderne et intuitive.",
@@ -85,7 +105,7 @@ const projects = [
     codeLink: "https://github.com/ovo-thom/popcorn_movie",
   },
   {
-    id: 4,
+    id: 3,
     title: "ArtVibe",
     description:
       "ArtVibe : est une application web moderne permettant d’explorer et de découvrir des œuvres visuelles inspirantes issues d’Unsplash. Grâce à une interface élégante et responsive, l’utilisateur peut filtrer les images par thème, effectuer des recherches dynamiques et naviguer facilement dans une galerie en grille masonry. Le projet intègre un mode clair/sombre, un scroll fluide, ainsi qu’un footer avec liens sociaux pour une expérience complète. Ce projet met en avant la maîtrise de Next.js, React et Tailwind CSS, l’intégration d’une API externe, la gestion de l’état et du filtrage côté client, ainsi que le souci du design et de l’accessibilité. ArtVibe est idéal pour illustrer des compétences en développement front-end moderne et en création d’interfaces utilisateur attractives.",
@@ -104,7 +124,7 @@ const projects = [
     codeLink: "https://github.com/ovo-thom/artvibe",
   },
   {
-    id: 5,
+    id: 4,
     title: "Doml",
     description:
       "Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive. Des animations d’apparition au scroll apportent du dynamisme, renforçant l’aspect interactif et moderne du site. Ce projet illustre la capacité à reproduire des maquettes UI complexes, à organiser un code scalable, et à intégrer des effets visuels avancés pour valoriser l’image d’une marque.",
@@ -129,34 +149,34 @@ const projects = [
     codeLink: "https://github.com/ovo-thom/doml",
   },
   {
-    id: 6,
-    title: "La Casa Di Toma",
+    id: 5,
+    title: "Incident-Manager",
     description:
-      "La Casa Di Toma est une application web moderne pour restaurant italien construite avec React 18 et TypeScript. Le projet intègre un système de panier complet avec gestion d'état via Context API, permettant l'ajout, modification et suppression d'articles. L'interface responsive utilise Tailwind CSS avec des animations fluides Framer Motion pour une expérience utilisateur soignée. L'architecture comprend une navigation intelligente avec scroll automatique, un dropdown panier accessible, et un design mobile-first optimisé. Déploiement automatique via Vercel. Une Progressive Web App (PWA) a été implémentée, permettant l'installation sur mobile et bureau, ainsi qu'une notification push personnalisée pour informer les utilisateurs des nouveautés.",
-  image: homepage,
-    imageList: [
-      homepage,
-      panier,
-      navHero,
-      welcomeAbout,
-      pizzaPasta,
-      recommandation,
-      contactFooter,
-      notificationPush
-    ],
+      "Incident Manager : est une application de gestion d’incidents permettant de créer, filtrer, modifier et supprimer des signalements. Elle propose une interface claire pour suivre le statut des incidents (ouvert / résolu), avec affichage automatique de la date de résolution. Le tout est construit avec React et Tailwind CSS, en adoptant des composants modulaires et une gestion d’état efficace via useState.",
+    image: gestionIncident,
+    imageList: [filterIncident, formIncident, gestionIncident],
+    technologies: ["Next.js (React)", "Tailwind", "createPortal"],
+    // demoLink: "",
+    codeLink: "https://github.com/ovo-thom/incident-manager",
+  },
+  {
+    id: 6,
+    title: "Daily Dashboard",
+    description:
+      "Daily Dashboard : est une application web qui aide les utilisateurs à structurer leur journée et rester motivés. Elle regroupe plusieurs outils pratiques : une to-do list pour les tâches quotidiennes, un champ 'focus du jour', une citation inspirante renouvelée chaque jour, ainsi qu’un système complet d’alarme, chronomètre et minuteur.L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather.L’interface est claire, responsive, et pensée pour favoriser l’organisation, la concentration et le bien-être au quotidien.",
+    image: dailyDashboard,
+    imageList: [dailyDashboard, chrono, alarme, timer],
     technologies: [
-      "React 18",
-      "TypeScript",
-      "PWA",
-      "Notification Push",
+      "Next.js (React)",
       "Tailwind",
-      "Vite",
-      "Framer Motion",
-      "Context API",
-      "Animation au scroll",
+      "API OpenWeather",
+      "CLSx",
+      "LocalStorage",
+      "Vercel",
+      "Github",
     ],
-    demoLink: "https://la-casa-di-toma.vercel.app/",
-    codeLink: "https://github.com/ovo-thom/la-casa-di-toma",
+    demoLink: "https://daily-dashboard-xi.vercel.app",
+    codeLink: "https://github.com/ovo-thom/daily-dashboard",
   },
 ];
 

@@ -37,7 +37,7 @@ const Navbar = () => {
         el.scrollIntoView({ behavior: "smooth" });
       }
     }
-    setIsOpen(false); // ferme le menu burger si ouvert
+    setIsOpen(false);
   };
 
   useEffect(() => {
@@ -90,11 +90,14 @@ const Navbar = () => {
             </button>
             <button
               onClick={() => handleSectionClick("projects")}
-              className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
-              style={{ background: "none", padding: 0, cursor: "pointer" }}
+              className="ml-6 rounded-full px-3 py-1 text-white font-medium
+  bg-indigo-500/10 border border-indigo-400/20
+  hover:bg-indigo-500/15 hover:border-indigo-400/40 transition"
+              style={{ background: "none", cursor: "pointer" }}
             >
               Projects
             </button>
+
             <button
               onClick={() => handleSectionClick("contact")}
               className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"

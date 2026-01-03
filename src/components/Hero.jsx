@@ -8,10 +8,12 @@ const Hero = () => {
     <section
       id="home"
       className="relative text-white flex flex-col md:flex-row items-center justify-center md:justify-between"
-      style={{ height: '100vh', maxHeight: '800px', minHeight: '600px' }}
+      style={{ height: "100vh", maxHeight: "800px", minHeight: "600px" }}
     >
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-slate-950 to-black overflow-hidden"
-           style={{ maxHeight: '800px' }}>
+      <div
+        className="absolute inset-0 z-0 bg-gradient-to-br from-gray-950 via-slate-950 to-black overflow-hidden"
+        style={{ maxHeight: "800px" }}
+      >
         <CosmicBackground starDensity={180} shootingStarFrequency={0.003} />
       </div>
 
@@ -32,6 +34,10 @@ const Hero = () => {
             </h1>
             <p className="text-gray-300 text-lg sm:text-xl md:text-xl font-light lg:text-2xl mb-2">
               Développeur web Front-End React / Next.js
+            </p>
+            <p className="text-indigo-300/90 text-sm">
+              Je conçois des interfaces modernes, performantes et accessibles
+              avec React & Next.js.
             </p>
           </div>
           <div className="relative z-30 flex justify-center items-center md:mt-0 mt-6">

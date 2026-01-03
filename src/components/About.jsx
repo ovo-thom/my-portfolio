@@ -55,13 +55,14 @@ const About = () => {
                   Développeur web front-end junior spécialisé en React, Next.js
                   et Tailwind CSS,{" "}
                   <span className="text-blue-400 font-medium bg-blue-400/15 px-3 py-1 rounded-lg">
-                    je suis actuellement à la recherche d&apos;un poste
+                    je suis actuellement à la recherche d’une première
+                    opportunité
                   </span>{" "}
-                  où je pourrai mettre à profit mes compétences tout en
-                  continuant à évoluer. Enthousiaste à l&apos;idée de rejoindre
-                  une équipe, j&apos;ai à cœur de partager mes idées et
-                  d&apos;apprendre de mes collègues pour contribuer à des
-                  projets innovants.
+                  en entreprise ou en collaboration freelance. J’aime
+                  transformer une idée ou une maquette en une interface fluide,
+                  performante et agréable à utiliser, tout en accordant une
+                  attention particulière à l’architecture front-end, à
+                  l’expérience utilisateur et à la qualité du code.
                 </p>
               </div>
 

@@ -28,6 +28,9 @@ import recommandation from "../assets/la_casa_di_toma/recommandation.png";
 import panier from "../assets/la_casa_di_toma/panier.png";
 import contactFooter from "../assets/la_casa_di_toma/contactfooter.png";
 import notificationPush from "../assets/la_casa_di_toma/notification_push.png";
+import homepageFinelyia from "../assets/finelyia/homepage.png";
+import transactionsFinelyia from "../assets/finelyia/transactions.png";
+import settingsFinelyia from "../assets/finelyia/settings.png";
 
 const projects = [
   {
@@ -61,27 +64,27 @@ const projects = [
     demoLink: "https://la-casa-di-toma.vercel.app/",
     codeLink: "https://github.com/ovo-thom/la-casa-di-toma",
   },
-  // {
-  //   id: 1,
-  //   title: "Daily Dashboard",
-  //   description:
-  //     "Daily Dashboard : est une application web qui aide les utilisateurs à structurer leur journée et rester motivés. Elle regroupe plusieurs outils pratiques : une to-do list pour les tâches quotidiennes, un champ 'focus du jour', une citation inspirante renouvelée chaque jour, ainsi qu’un système complet d’alarme, chronomètre et minuteur.L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather.L’interface est claire, responsive, et pensée pour favoriser l’organisation, la concentration et le bien-être au quotidien.",
-  //   image: dailyDashboard,
-  //   imageList: [dailyDashboard, chrono, alarme, timer],
-  //   technologies: [
-  //     "Next.js (React)",
-  //     "Tailwind",
-  //     "API OpenWeather",
-  //     "CLSx",
-  //     "LocalStorage",
-  //     "Vercel",
-  //     "Github",
-  //   ],
-  //   demoLink: "https://daily-dashboard-xi.vercel.app",
-  //   codeLink: "https://github.com/ovo-thom/daily-dashboard",
-  // },
   {
     id: 2,
+    title: "Finelyia",
+    inProgress: true,
+    description:
+      "Finelyia est une application web que je développe pour apprendre à gérer un projet plus complet autour de la gestion de finances personnelles. L’objectif est de permettre à un utilisateur de suivre ses dépenses et ses revenus, et d’avoir une vue claire de sa situation financière grâce à un tableau de bord et des graphiques. Ce projet me permet de travailler sur l’authentification, la gestion de données, l’organisation du code et le déploiement d’une application complète. Il est encore en cours de développement et sera amélioré progressivement avec de nouvelles fonctionnalités.",
+    image: homepageFinelyia,
+    imageList: [homepageFinelyia, transactionsFinelyia, settingsFinelyia],
+    technologies: [
+      "React",
+      "Tailwind",
+      "Firebase",
+      "Chart.js",
+      "Vite",
+      "I18next",
+    ],
+    demoLink: "https://finelyia.netlify.app/",
+    // codeLink: "",
+  },
+  {
+    id: 3,
     title: "Popcorn Movie",
     description:
       "PopCorn Movie : est une application web moderne de découverte de films, développée avec Next.js et stylisée via Tailwind CSS. Elle s'appuie sur l'API de TMDb (The Movie Database) pour récupérer en temps réel les derniers films à l'affiche, les tendances du moment, et les résultats de recherche personnalisés. L'utilisateur peut rechercher des films grâce à une barre de recherche interactive, parcourir les films 'Now Playing' dans un slider responsive utilisant Swiper avec des animations fluides, et ajouter des films en favoris en un clic via une icône cœur avec persistance des données grâce au LocalStorage. L'application offre une expérience responsive optimisée sur tous les appareils. Le projet met en avant une architecture modulaire et propre, avec des composants réutilisables comme MovieCard, une gestion asynchrone des données à travers des fonctions dédiées (fetchNowPlayingMovie, fetchSearchMovies), et une intégration soignée du design UI pour une expérience utilisateur moderne et intuitive.",

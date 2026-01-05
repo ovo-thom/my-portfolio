@@ -27,6 +27,12 @@ export default function ProjectsPage() {
                     Projet principal
                   </span>
                 )}
+
+                {project.inProgress && (
+                  <span className="absolute top-2 left-2 z-10 rounded-full border border-gray-300/60 bg-purple-400/20 px-2 py-1 text-xs font-medium text-gray-200 backdrop-blur-sm">
+                    Projet en cours
+                  </span>
+                )}
                 <img
                   src={project.image}
                   alt={project.title}

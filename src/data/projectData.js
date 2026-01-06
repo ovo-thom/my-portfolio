@@ -168,7 +168,8 @@ const projects = [
     id: 7,
     title: "Daily Dashboard",
     description:
-      "Daily Dashboard : est une application web qui aide les utilisateurs à structurer leur journée et rester motivés. Elle regroupe plusieurs outils pratiques : une to-do list pour les tâches quotidiennes, un champ 'focus du jour', une citation inspirante renouvelée chaque jour, ainsi qu’un système complet d’alarme, chronomètre et minuteur.L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather.L’interface est claire, responsive, et pensée pour favoriser l’organisation, la concentration et le bien-être au quotidien.",
+      "Daily Dashboard est une application web que j’ai développée pour proposer plusieurs outils utiles au même endroit. Mon objectif était de créer une interface simple et motivante, regroupant une to-do list pour les tâches quotidiennes, un champ focus du jour, une citation inspirante renouvelée chaque jour et des outils de gestion du temps comme un chronomètre, un minuteur et une alarme. L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather. J’ai construit ce projet avec Next.js et Tailwind CSS, en travaillant sur l’intégration d’API, la persistance des données dans le navigateur et une interface entièrement pensée pour être utilisable aussi bien sur ordinateur que sur mobile."
+,
     image: dailyDashboard,
     imageList: [dailyDashboard, chrono, alarme, timer],
     technologies: [

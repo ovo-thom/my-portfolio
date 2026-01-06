@@ -130,7 +130,7 @@ const projects = [
     id: 5,
     title: "Doml",
     description:
-      "Doml est un site vitrine moderne développé avec Next.js et Tailwind CSS, conçu pour mettre en avant une expérience utilisateur soignée et professionnelle. Le projet se distingue par un design fidèle à la maquette Figma d’origine, une interface responsive adaptée aux écrans mobile et desktop, et l’utilisation de composants réutilisables pour une structure de code claire et évolutive. Des animations d’apparition au scroll apportent du dynamisme, renforçant l’aspect interactif et moderne du site. Ce projet illustre la capacité à reproduire des maquettes UI complexes, à organiser un code scalable, et à intégrer des effets visuels avancés pour valoriser l’image d’une marque.",
+      "Doml est un site vitrine que j’ai développé à partir d’une maquette réalisée sur Figma. Mon objectif était de reproduire le plus fidèlement possible un design professionnel conçu dans Figma, tout en créant une interface moderne et entièrement responsive. J’ai construit le projet avec Next.js et Tailwind CSS, en utilisant des composants React réutilisables pour garder un code bien organisé et facile à maintenir. J’ai aussi intégré des animations au scroll pour apporter du dynamisme et rendre le site plus interactif. Ce projet m’a permis de montrer ma capacité à transformer une maquette UI en application web réelle, proprement structurée et optimisée pour mobile et desktop.",
     image: templateDoml,
     imageList: [
       header,

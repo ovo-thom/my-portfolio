@@ -111,7 +111,7 @@ const projects = [
     id: 4,
     title: "ArtVibe",
     description:
-      "ArtVibe : est une application web moderne permettant d’explorer et de découvrir des œuvres visuelles inspirantes issues d’Unsplash. Grâce à une interface élégante et responsive, l’utilisateur peut filtrer les images par thème, effectuer des recherches dynamiques et naviguer facilement dans une galerie en grille masonry. Le projet intègre un mode clair/sombre, un scroll fluide, ainsi qu’un footer avec liens sociaux pour une expérience complète. Ce projet met en avant la maîtrise de Next.js, React et Tailwind CSS, l’intégration d’une API externe, la gestion de l’état et du filtrage côté client, ainsi que le souci du design et de l’accessibilité. ArtVibe est idéal pour illustrer des compétences en développement front-end moderne et en création d’interfaces utilisateur attractives.",
+      "ArtVibe est une application web que j’ai développée pour créer une galerie d’images inspirantes à partir d’une API externe. Mon objectif était de concevoir une interface claire et agréable permettant d’explorer facilement des œuvres visuelles. L’utilisateur peut rechercher des images, les filtrer par thème et naviguer dans une galerie en grille masonry entièrement responsive. J’ai aussi intégré un mode clair et sombre pour améliorer le confort d’utilisation. Ce projet m’a permis de travailler sur l’intégration de l’API Unsplash, le filtrage côté client, la gestion d’état en React, et la mise en place d’un design moderne avec Tailwind CSS.",
     image: artvibeLightMode,
     imageList: [artvibeDarkMode, artvibeLightMode],
     technologies: [

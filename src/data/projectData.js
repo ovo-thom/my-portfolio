@@ -155,7 +155,9 @@ const projects = [
     id: 6,
     title: "Incident-Manager",
     description:
-      "Incident Manager : est une application de gestion d’incidents permettant de créer, filtrer, modifier et supprimer des signalements. Elle propose une interface claire pour suivre le statut des incidents (ouvert / résolu), avec affichage automatique de la date de résolution. Le tout est construit avec React et Tailwind CSS, en adoptant des composants modulaires et une gestion d’état efficace via useState.",
+      "Incident Manager est une application web que j’ai développée pour gérer et suivre des incidents de manière simple. Mon objectif était de créer un outil pratique permettant de créer des signalements, d’afficher une liste claire, de les modifier et de les supprimer facilement. J’ai construit ce projet avec React et Tailwind CSS en travaillant sur une architecture de composants modulaires et une gestion d’état efficace. Ce projet montre ma capacité à concevoir une application de gestion de données complète côté front."
+
+,
     image: gestionIncident,
     imageList: [filterIncident, formIncident, gestionIncident],
     technologies: ["Next.js (React)", "Tailwind", "createPortal"],

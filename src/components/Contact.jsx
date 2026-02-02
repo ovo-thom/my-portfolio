@@ -73,19 +73,19 @@ const Contact = () => {
         <div className="flex items-center justify-center mb-4">
           <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
           <h3 className="text-white text-lg font-semibold">
-            Plan Formation Insertion (PFI)
+            Plan Impulsion (Forem)
           </h3>
         </div>
         <p className="text-center text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
           Je suis éligible au{" "}
           <span className="text-green-400 font-medium bg-green-400/10 px-2 py-1 rounded">
-            plan PFI
+            plan Impulsion
           </span>{" "}
-          du Forem, un programme permettant à l&apos;employeur de bénéficier
-          d&apos;un soutien financier tout en formant le candidat selon ses
-          besoins. Pour plus d&apos;informations, consultez le site du{" "}
+          un dispositif permettant à l’employeur de bénéficier d’une aide
+          financière lors de mon engagement, avec des démarches administratives
+          simples. Pour plus d’informations, consultez le site du{" "}
           <a
-            href="https://www.leforem.be/entreprises/aides-financieres-plan-formation-insertion.html"
+            href="https://www.leforem.be/entreprises/aides-emploi-impulsion-12-mois-plus.html"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-400 hover:text-green-300 underline font-medium transition-colors duration-200"

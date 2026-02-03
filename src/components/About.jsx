@@ -52,8 +52,8 @@ const About = () => {
                   </span>
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed">
-                  Développeur web front-end junior spécialisé en React, Next.js
-                  et Tailwind CSS,{" "}
+                  Développeur web front-end junior formé en React, Next.js et
+                  Tailwind CSS et WordPress,{" "}
                   <span className="text-blue-400 font-medium bg-blue-400/15 px-3 py-1 rounded-lg">
                     je suis actuellement à la recherche d’une première
                     opportunité
@@ -83,7 +83,8 @@ const About = () => {
                   <p>
                     <strong className="text-white">Technologies :</strong>{" "}
                     HTML5, CSS3, JavaScript ES6+, React, Next.js, TypeScript,
-                    Tailwind CSS, Git, Vite.
+                    Tailwind CSS, WordPress(thèmes, plugins, customisation),
+                    Git, Vite.
                   </p>
                   <p>
                     <strong className="text-white">Projet clé :</strong> Site
@@ -145,6 +146,17 @@ const About = () => {
                         Environnement collaboratif
                       </strong>{" "}
                       Git/GitHub avec code reviews et pull requests
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-emerald-400 font-bold text-lg mt-1">
+                      •
+                    </span>
+                    <span>
+                      <strong className="text-white">
+                        Intégration et personnalisation
+                      </strong>{" "}
+                      de sites WordPress (thèmes, plugins, adaptation UI)
                     </span>
                   </div>
                 </div>

@@ -66,27 +66,27 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link
               to="/"
-              className="title-night text-base sm:text-xl md:text-3xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
+              className="title-night text-base sm:text-xl md:text-2xl font-bold ml-2 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent"
             >
               Thomas | Portfolio
             </Link>
           </div>
 
           {/* Menu pour les grands écrans */}
-          <div className="text-xl">
+          <div className="text-sm md:text-base">
             <button
               onClick={() => handleSectionClick("about")}
               className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
               style={{ background: "none", padding: 0, cursor: "pointer" }}
             >
-              About
+              À propos
             </button>
             <button
               onClick={() => handleSectionClick("skills")}
               className="ml-6 relative bg-transparent border-none after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full duration-200 hover:text-gray-300"
               style={{ background: "none", padding: 0, cursor: "pointer" }}
             >
-              Skills
+              Compétences
             </button>
             <button
               onClick={() => handleSectionClick("projects")}
@@ -95,7 +95,7 @@ const Navbar = () => {
   hover:bg-indigo-500/15 hover:border-indigo-400/40 transition"
               style={{ background: "none", cursor: "pointer" }}
             >
-              Projects
+              Projets
             </button>
 
             <button

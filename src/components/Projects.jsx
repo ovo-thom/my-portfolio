@@ -7,13 +7,14 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 import homepage from "../assets/popcornmovie/home_popcornmovie.png";
-import craftifyHome from "../images/craftify-home.png";
+// import craftifyHome from "../images/craftify-home.png";
 import lifestyle from "../images/lifestyle.png";
 import laCasaDiToma from "../assets/la_casa_di_toma/homepage.png";
 import { LuPopcorn } from "react-icons/lu";
 import { CiPizza } from "react-icons/ci";
 import { MdFitnessCenter } from "react-icons/md";
 import { GiStoneCrafting } from "react-icons/gi";
+import timeElegance from "../assets/timeelegance/timeElegance_fullscreen.png";
 
 import { EffectCube, Pagination } from "swiper/modules";
 
@@ -121,18 +122,16 @@ export default function Projects() {
                   </h2>
                   <span className="text-indigo-400 text-lg sm:text-xl">
                     <MdFitnessCenter />
+                    <span className="absolute top-2 right-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
+                    Projet professionnel
+                  </span>
                   </span>
                 </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
                     LifeStyle fitness :
                   </span>{" "}
-                  Réalisation d’une page web à partir d’une maquette Figma pour
-                  LifeStyle Fitness, une chaîne de salles de sport reconnue. Le
-                  projet a été développé avec Next.js et Tailwind CSS, en
-                  version responsive pour desktop et mobile. Un formulaire a
-                  également été intégré pour permettre aux utilisateurs
-                  d’obtenir un pass gratuit.
+                  LifeStyle Fitness : Projet réalisé dans le cadre de mon stage pour une chaîne de salles de sport. À partir d’une maquette Figma, j’ai développé une page web responsive avec Next.js et Tailwind CSS, en veillant à respecter le design et à intégrer un formulaire permettant aux utilisateurs d’obtenir un pass gratuit.
                 </p>
               </div>
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
@@ -148,12 +147,7 @@ export default function Projects() {
                   <span className="italic font-light text-blue-600 ">
                     Craftify :
                   </span>{" "}
-                  Premier projet réalisé en équipe dans le cadre de ma formation
-                  chez BeCode. Il s’agit d’un site e-commerce dédié aux
-                  artisans, développé avec React et Vite pour le front-end. Le
-                  site intègre des fonctionnalités essentielles telles que la
-                  gestion du panier, les filtres de produits et une navigation
-                  fluide.
+                  Craftify : Projet réalisé en équipe dans le cadre de ma formation chez BeCode. Il s’agit d’un site e-commerce développé avec React et Vite, intégrant des fonctionnalités comme la gestion du panier, les filtres de produits et une navigation fluide. Le projet n’est actuellement plus en ligne suite à l’arrêt de l’hébergement backend, mais un portfolio détaillé est disponible pour présenter le travail réalisé.
                 </p>
                 <a
                   href="https://craftify-project.myportfolio.com/"
@@ -162,6 +156,9 @@ export default function Projects() {
                 >
                   → Portfolio du projet
                 </a>
+                <span className="absolute top-2 right-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
+                    Projet en équipe
+                  </span>
               </div>
             </div>
 
@@ -218,10 +215,10 @@ export default function Projects() {
                   <SwiperSlide className="flex justify-center items-center w-full h-full">
                     <div className="w-full h-full flex justify-center items-center">
                       <img
-                        src={craftifyHome}
+                        src={timeElegance}
                         alt="Craftify Home"
                         className="w-full h-full object-cover object-top cursor-pointer"
-                        onClick={() => openModal(craftifyHome)}
+                        onClick={() => openModal(timeElegance)}
                       />
                     </div>
                   </SwiperSlide>

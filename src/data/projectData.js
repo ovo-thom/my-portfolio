@@ -36,6 +36,7 @@ import bottomHomePageTimeElegance from "../assets/timeelegance/bottomHomePage.pn
 import featuredCollectionsTimeElegance from "../assets/timeelegance/featuredCollections.png";
 import responsiveHomePageTimeElegance from "../assets/timeelegance/responsive_homepage.png";
 import fullScreenTimeElegance from "../assets/timeelegance/timeElegance_fullscreen.png";
+import craftifyHome from "../images/craftify-home.png";
 
 const projects = [
   {
@@ -192,6 +193,17 @@ const projects = [
     ],
     // demoLink: "https://timeelegance.local",
   },
+  {
+  id: 8,
+  title: "Craftify",
+  inProgress: false,
+  description:
+    "Craftify est un projet réalisé en équipe dans le cadre de ma formation chez BeCode. Il s’agit d’un site e-commerce développé avec React et Vite, intégrant des fonctionnalités comme la gestion du panier, les filtres de produits et une navigation fluide. Le projet n’est actuellement plus en ligne suite à l’arrêt de l’hébergement backend, mais un portfolio détaillé reste disponible pour présenter le travail réalisé.",
+  image: craftifyHome,
+  imageList: [craftifyHome],
+  technologies: ["React", "Vite", "Tailwind", "Team Project"],
+  demoLink: "https://craftify-project.myportfolio.com/",
+}
   //   {
   //     id: 7,
   //     title: "Daily Dashboard",

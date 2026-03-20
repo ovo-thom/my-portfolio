@@ -36,7 +36,7 @@ export default function ProjectsPage() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-contain rounded transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top rounded transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="opacity-0 group-hover:opacity-100 flex h-full w-full bg-black/60 absolute top-0 left-0 items-center justify-center text-white text-xl font-semibold backdrop-blur-sm transition-all duration-300 ease-in-out transform group-hover:scale-105">
                   Voir le projet

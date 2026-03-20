@@ -4,10 +4,10 @@ import movieDetailsImg from "../assets/popcornmovie/movie_details.png";
 import favoritesImg from "../assets/popcornmovie/favorites.png";
 import inputSearchImg from "../assets/popcornmovie/inputsearch.png";
 import advancedInputImg from "../assets/popcornmovie/advancedsearch_inputselect.png";
-import dailyDashboard from "../assets/daily_dashboard/dailydashboard.png";
-import alarme from "../assets/daily_dashboard/alarme.png";
-import chrono from "../assets/daily_dashboard/chrono.png";
-import timer from "../assets/daily_dashboard/timer.png";
+// import dailyDashboard from "../assets/daily_dashboard/dailydashboard.png";
+// import alarme from "../assets/daily_dashboard/alarme.png";
+// import chrono from "../assets/daily_dashboard/chrono.png";
+// import timer from "../assets/daily_dashboard/timer.png";
 import filterIncident from "../assets/incident_manager/filter-incident.png";
 import formIncident from "../assets/incident_manager/form-incident.png";
 import gestionIncident from "../assets/incident_manager/gestion-incidents.png";
@@ -31,6 +31,11 @@ import notificationPush from "../assets/la_casa_di_toma/notification_push.png";
 import homepageFinelyia from "../assets/finelyia/homepage.png";
 import transactionsFinelyia from "../assets/finelyia/transactions.png";
 import settingsFinelyia from "../assets/finelyia/settings.png";
+import homePageTimeElegance from "../assets/timeelegance/homePage_MainImage.png";
+import bottomHomePageTimeElegance from "../assets/timeelegance/bottomHomePage.png";
+import featuredCollectionsTimeElegance from "../assets/timeelegance/featuredCollections.png";
+import responsiveHomePageTimeElegance from "../assets/timeelegance/responsive_homepage.png";
+import fullScreenTimeElegance from "../assets/timeelegance/timeElegance_fullscreen.png";
 
 const projects = [
   {
@@ -155,9 +160,8 @@ const projects = [
     id: 6,
     title: "Incident-Manager",
     description:
-      "Incident Manager est une application web que j’ai développée pour gérer et suivre des incidents de manière simple. Mon objectif était de créer un outil pratique permettant de créer des signalements, d’afficher une liste claire, de les modifier et de les supprimer facilement. J’ai construit ce projet avec React et Tailwind CSS en travaillant sur une architecture de composants modulaires et une gestion d’état efficace. Ce projet montre ma capacité à concevoir une application de gestion de données complète côté front."
+      "Incident Manager est une application web que j’ai développée pour gérer et suivre des incidents de manière simple. Mon objectif était de créer un outil pratique permettant de créer des signalements, d’afficher une liste claire, de les modifier et de les supprimer facilement. J’ai construit ce projet avec React et Tailwind CSS en travaillant sur une architecture de composants modulaires et une gestion d’état efficace. Ce projet montre ma capacité à concevoir une application de gestion de données complète côté front.",
 
-,
     image: gestionIncident,
     imageList: [filterIncident, formIncident, gestionIncident],
     technologies: ["Next.js (React)", "Tailwind", "createPortal"],
@@ -166,24 +170,48 @@ const projects = [
   },
   {
     id: 7,
-    title: "Daily Dashboard",
+    title: "TimeElegance",
+    inProgress: false,
     description:
-      "Daily Dashboard est une application web que j’ai développée pour proposer plusieurs outils utiles au même endroit. Mon objectif était de créer une interface simple et motivante, regroupant une to-do list pour les tâches quotidiennes, un champ focus du jour, une citation inspirante renouvelée chaque jour et des outils de gestion du temps comme un chronomètre, un minuteur et une alarme. L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather. J’ai construit ce projet avec Next.js et Tailwind CSS, en travaillant sur l’intégration d’API, la persistance des données dans le navigateur et une interface entièrement pensée pour être utilisable aussi bien sur ordinateur que sur mobile."
-,
-    image: dailyDashboard,
-    imageList: [dailyDashboard, chrono, alarme, timer],
-    technologies: [
-      "Next.js (React)",
-      "Tailwind",
-      "API OpenWeather",
-      "CLSx",
-      "LocalStorage",
-      "Vercel",
-      "Github",
+      "TimeElegance est un site vitrine multipage dédié à l’univers des montres de luxe. Réalisé avec WordPress, Astra et Elementor, ce projet s’inscrit dans ma volonté d’explorer cet écosystème en complément de mes projets React/Next.js. À partir d’une maquette générée par IA, j’ai conçu une interface élégante en desktop, puis adaptée en responsive pour garantir une expérience fluide sur mobile et tablette. J’y ai intégré un formulaire de contact avec WPForms afin de répondre à un besoin concret d’interaction utilisateur. Ce projet m’a permis de travailler la structuration de pages, la cohérence visuelle et une approche orientée conversion.",
+    image: fullScreenTimeElegance,
+    imageList: [
+      homePageTimeElegance,
+      bottomHomePageTimeElegance,
+      featuredCollectionsTimeElegance,
+      responsiveHomePageTimeElegance,
+      fullScreenTimeElegance,
     ],
-    demoLink: "https://daily-dashboard-xi.vercel.app",
-    codeLink: "https://github.com/ovo-thom/daily-dashboard",
+    technologies: [
+      "WordPress",
+      "Elementor",
+      "Astra",
+      "WPForms",
+      "CSS",
+      "Responsive Design",
+    ],
+    // demoLink: "https://timeelegance.local",
   },
+  //   {
+  //     id: 7,
+  //     title: "Daily Dashboard",
+  //     description:
+  //       "Daily Dashboard est une application web que j’ai développée pour proposer plusieurs outils utiles au même endroit. Mon objectif était de créer une interface simple et motivante, regroupant une to-do list pour les tâches quotidiennes, un champ focus du jour, une citation inspirante renouvelée chaque jour et des outils de gestion du temps comme un chronomètre, un minuteur et une alarme. L’application affiche aussi la météo locale en temps réel grâce à l’API OpenWeather. J’ai construit ce projet avec Next.js et Tailwind CSS, en travaillant sur l’intégration d’API, la persistance des données dans le navigateur et une interface entièrement pensée pour être utilisable aussi bien sur ordinateur que sur mobile."
+  // ,
+  //     image: dailyDashboard,
+  //     imageList: [dailyDashboard, chrono, alarme, timer],
+  //     technologies: [
+  //       "Next.js (React)",
+  //       "Tailwind",
+  //       "API OpenWeather",
+  //       "CLSx",
+  //       "LocalStorage",
+  //       "Vercel",
+  //       "Github",
+  //     ],
+  //     demoLink: "https://daily-dashboard-xi.vercel.app",
+  //     codeLink: "https://github.com/ovo-thom/daily-dashboard",
+  //   },
 ];
 
 export default projects;

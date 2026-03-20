@@ -146,7 +146,7 @@ const About = () => {
                         Environnement collaboratif
                       </strong>{" "}
                       Git/GitHub avec code reviews et pull requests
-                    </span>
+                    </span> 
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-emerald-400 font-bold text-lg mt-1">

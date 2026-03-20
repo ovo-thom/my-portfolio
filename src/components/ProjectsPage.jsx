@@ -23,7 +23,7 @@ export default function ProjectsPage() {
               </div>
               <div className="relative mx-2 sm:m-4 overflow-hidden rounded h-40 sm:h-48 md:h-56 lg:h-64 bg-gray-900/20">
                 {project.featured && (
-                  <span className="absolute top-2 left-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
+                  <span className="absolute top-2 left-2 z-10 rounded-full border border-indigo-600/60 bg-indigo-700/10 px-2 py-1 text-xs font-medium text-indigo-500 backdrop-blur-sm">
                     Projet principal
                   </span>
                 )}
@@ -33,6 +33,13 @@ export default function ProjectsPage() {
                     Projet en cours
                   </span>
                 )}
+
+                {project.wordpress && (
+                                  <span className="absolute top-2 left-2 z-10 rounded-full border border-amber-400/60 bg-amber-500/10 px-2 py-1 text-xs font-medium text-amber-300 backdrop-blur-sm">
+                  Projet Wordpress
+                </span>
+                )}
+
                 <img
                   src={project.image}
                   alt={project.title}

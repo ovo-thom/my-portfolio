@@ -172,7 +172,7 @@ const projects = [
   {
     id: 7,
     title: "TimeElegance",
-    inProgress: false,
+    wordpress: true,
     description:
       "TimeElegance est un site vitrine multipage dédié à l’univers des montres de luxe. Réalisé avec WordPress, Astra et Elementor, ce projet s’inscrit dans ma volonté d’explorer cet écosystème en complément de mes projets React/Next.js. À partir d’une maquette générée par IA, j’ai conçu une interface élégante en desktop, puis adaptée en responsive pour garantir une expérience fluide sur mobile et tablette. J’y ai intégré un formulaire de contact avec WPForms afin de répondre à un besoin concret d’interaction utilisateur. Ce projet m’a permis de travailler la structuration de pages, la cohérence visuelle et une approche orientée conversion.",
     image: fullScreenTimeElegance,

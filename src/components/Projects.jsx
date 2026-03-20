@@ -7,13 +7,12 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 import homepage from "../assets/popcornmovie/home_popcornmovie.png";
-// import craftifyHome from "../images/craftify-home.png";
 import lifestyle from "../images/lifestyle.png";
 import laCasaDiToma from "../assets/la_casa_di_toma/homepage.png";
 import { LuPopcorn } from "react-icons/lu";
 import { CiPizza } from "react-icons/ci";
 import { MdFitnessCenter } from "react-icons/md";
-import { GiStoneCrafting } from "react-icons/gi";
+import { PiWatch } from "react-icons/pi";
 import timeElegance from "../assets/timeelegance/timeElegance_fullscreen.png";
 
 import { EffectCube, Pagination } from "swiper/modules";
@@ -63,7 +62,7 @@ export default function Projects() {
           <div className="w-full flex flex-col md:items-center lg:flex-row">
             <div className="project-description text-xl lg:w-1/2 px-5">
               <div className="py-4 mb-8 md:mb-8 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 sm:p-6 md:p-6 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="flex items-baseline space-x-3">
+                <div className="flex items-baseline space-x-3 mb-2">
                   <p className="text-xl sm:text-2xl font-semibold mb-2 text-white">
                     Popcorn Movie
                   </p>
@@ -89,7 +88,7 @@ export default function Projects() {
                 </Link>
               </div>
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="flex items-baseline space-x-3">
+                <div className="flex items-baseline space-x-3 mb-2">
                   <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
                     La Casa Di Toma
                   </h2>
@@ -116,49 +115,56 @@ export default function Projects() {
               </div>
 
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="flex items-baseline space-x-3">
+                <div className="flex items-baseline space-x-3 mb-2">
                   <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
                     LifeStyle Fitness
                   </h2>
                   <span className="text-indigo-400 text-lg sm:text-xl">
                     <MdFitnessCenter />
-                    <span className="absolute top-2 right-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
-                    Projet professionnel
-                  </span>
+                    <span className="absolute top-3 right-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
+                      Projet professionnel
+                    </span>
                   </span>
                 </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
                     LifeStyle fitness :
                   </span>{" "}
-                  LifeStyle Fitness : Projet réalisé dans le cadre de mon stage pour une chaîne de salles de sport. À partir d’une maquette Figma, j’ai développé une page web responsive avec Next.js et Tailwind CSS, en veillant à respecter le design et à intégrer un formulaire permettant aux utilisateurs d’obtenir un pass gratuit.
+                  LifeStyle Fitness : Projet réalisé dans le cadre de mon stage
+                  pour une chaîne de salles de sport. À partir d’une maquette
+                  Figma, j’ai développé une page web responsive avec Next.js et
+                  Tailwind CSS, en veillant à respecter le design et à intégrer
+                  un formulaire permettant aux utilisateurs d’obtenir un pass
+                  gratuit.
                 </p>
               </div>
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="flex items-baseline space-x-3">
+                <div className="flex items-baseline space-x-3 mb-2">
                   <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                    Craftify
+                    TimeElegance
                   </h2>
                   <span className="text-amber-400 text-lg sm:text-xl">
-                    <GiStoneCrafting />
+                    <PiWatch />
                   </span>
                 </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
-                    Craftify :
+                    TimeElegance :
                   </span>{" "}
-                  Craftify : Projet réalisé en équipe dans le cadre de ma formation chez BeCode. Il s’agit d’un site e-commerce développé avec React et Vite, intégrant des fonctionnalités comme la gestion du panier, les filtres de produits et une navigation fluide. Le projet n’est actuellement plus en ligne suite à l’arrêt de l’hébergement backend, mais un portfolio détaillé est disponible pour présenter le travail réalisé.
+                  TimeElegance : Site vitrine multipage dédié à l’univers des
+                  montres de luxe, réalisé avec WordPress, Astra et Elementor à
+                  partir d’une maquette générée par IA, puis adapté en
+                  responsive pour mobile et tablette.
                 </p>
-                <a
-                  href="https://craftify-project.myportfolio.com/"
-                  target="_blank"
+                <Link
+                  to="/projects/7"
                   className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
                 >
-                  → Portfolio du projet
-                </a>
-                <span className="absolute top-2 right-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
-                    Projet en équipe
-                  </span>
+                  → Voir le projet en détail
+                </Link>
+                <span className="absolute top-3 right-2 z-10 rounded-full border border-amber-400/60 bg-amber-500/10 px-2 py-1 text-xs font-medium text-amber-300 backdrop-blur-sm">
+                  Projet Wordpress
+                </span>
               </div>
             </div>
 

@@ -5,7 +5,7 @@ function Training() {
     <section className="bg-gradient-to-br from-gray-950 via-slate-950 to-black px-4 sm:px-6 lg:px-10 py-20 md:py-20 lg:py-20">
       <div className="max-w-6xl w-full mx-auto">
         <h2 className="title-night text-2xl sm:text-3xl lg:text-5xl font-bold text-center py-3 mb-12 md:mb-12 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
-          Training & Education
+          Formation
         </h2>
 
         <div className="bg-gradient-to-r from-violet-500/10 via-indigo-500/10 to-violet-500/10 backdrop-blur-sm border-2 border-violet-400/30 rounded-xl p-4 sm:p-6 my-6 sm:my-8 hover:bg-gradient-to-r hover:from-violet-500/20 hover:via-indigo-500/20 hover:to-violet-500/20 transition-all duration-300 shadow-lg shadow-violet-500/20">

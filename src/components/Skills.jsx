@@ -26,7 +26,7 @@ const Skills = () => {
       <div className="background-filter"></div>
       <div className="sectionskills container relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         <h2 className="title-night text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-16 md:mb-16 bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
-          Skills
+          Compétences
         </h2>
         
 

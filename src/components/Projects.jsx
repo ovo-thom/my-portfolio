@@ -57,7 +57,7 @@ export default function Projects() {
       <section id="projects" className="project w-full py-20 md:py-20 lg:py-20">
         <div className="max-w-7xl mx-auto w-full">
           <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl sm:my-12 md:my-12 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent leading-relaxed py-2">
-            My Projects
+            Mes projets
           </h2>
           <div className="w-full flex flex-col md:items-center lg:flex-row">
             <div className="project-description text-xl lg:w-1/2 px-5">

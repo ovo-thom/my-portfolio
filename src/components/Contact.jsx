@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="contact-left lg:w-1/2">
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300 h-full flex flex-col justify-between">
             <h2 className="title-night text-center text-3xl sm:text-3xl lg:text-5xl mb-5 md:mb-10 font-semibold bg-gradient-to-b from-[#9e6cd1] via-[#0088cc] to-[#ff68b0] bg-clip-text text-transparent">
-              Let&apos;s Connect
+              Contact
             </h2>
 
             <div className="flex items-center mb-4">

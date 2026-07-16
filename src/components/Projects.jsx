@@ -136,6 +136,12 @@ export default function Projects() {
                   revenus, ainsi qu’un tableau de bord avec graphiques pour
                   visualiser la situation financière de l’utilisateur.
                 </p>
+                <Link
+                  to="/projects/2"
+                  className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
+                >
+                  → Voir le projet en détail
+                </Link>
               </div>
 
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">

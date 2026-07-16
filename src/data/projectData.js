@@ -28,7 +28,6 @@ import recommandation from "../assets/la_casa_di_toma/recommandation.png";
 import panier from "../assets/la_casa_di_toma/panier.png";
 import contactFooter from "../assets/la_casa_di_toma/contactfooter.png";
 import notificationPush from "../assets/la_casa_di_toma/notification_push.png";
-// import homepageFinelyia from "../assets/finelyia/homepage.png";
 import homepageFinelyia from "../assets/finelyia/Finelyia.png";
 import transactionsFinelyia from "../assets/finelyia/transactions.png";
 import settingsFinelyia from "../assets/finelyia/settings.png";
@@ -38,10 +37,29 @@ import featuredCollectionsTimeElegance from "../assets/timeelegance/featuredColl
 import responsiveHomePageTimeElegance from "../assets/timeelegance/responsive_homepage.png";
 import fullScreenTimeElegance from "../assets/timeelegance/timeElegance_fullscreen.png";
 import craftifyHome from "../images/craftify-home.png";
+import lifestyle from "../images/lifestyle.png";
 
 const projects = [
   {
     id: 1,
+    title: "Finelyia",
+    inProgress: true,
+    description:
+      "Finelyia est une application web que je développe pour apprendre à gérer un projet plus complet autour de la gestion de finances personnelles. L’objectif est de permettre à un utilisateur de suivre ses dépenses et ses revenus, et d’avoir une vue claire de sa situation financière grâce à un tableau de bord et des graphiques. Ce projet me permet de travailler sur l’authentification, la gestion de données, l’organisation du code et le déploiement d’une application complète. Il est encore en cours de développement et sera amélioré progressivement avec de nouvelles fonctionnalités.",
+    image: homepageFinelyia,
+    imageList: [homepageFinelyia, transactionsFinelyia, settingsFinelyia],
+    technologies: [
+      "React",
+      "Tailwind",
+      "Firebase",
+      "Chart.js",
+      "Vite",
+      "I18next",
+    ],
+    demoLink: "https://finelyia.netlify.app/",
+  },
+  {
+    id: 2,
     title: "La Casa Di Toma",
     featured: true,
     description:
@@ -70,25 +88,6 @@ const projects = [
     ],
     demoLink: "https://la-casa-di-toma.vercel.app/",
     codeLink: "https://github.com/ovo-thom/la-casa-di-toma",
-  },
-  {
-    id: 2,
-    title: "Finelyia",
-    inProgress: true,
-    description:
-      "Finelyia est une application web que je développe pour apprendre à gérer un projet plus complet autour de la gestion de finances personnelles. L’objectif est de permettre à un utilisateur de suivre ses dépenses et ses revenus, et d’avoir une vue claire de sa situation financière grâce à un tableau de bord et des graphiques. Ce projet me permet de travailler sur l’authentification, la gestion de données, l’organisation du code et le déploiement d’une application complète. Il est encore en cours de développement et sera amélioré progressivement avec de nouvelles fonctionnalités.",
-    image: homepageFinelyia,
-    imageList: [homepageFinelyia, transactionsFinelyia, settingsFinelyia],
-    technologies: [
-      "React",
-      "Tailwind",
-      "Firebase",
-      "Chart.js",
-      "Vite",
-      "I18next",
-    ],
-    demoLink: "https://finelyia.netlify.app/",
-    // codeLink: "",
   },
   {
     id: 3,
@@ -204,6 +203,16 @@ const projects = [
     imageList: [craftifyHome],
     technologies: ["React", "Vite", "Tailwind", "Team Project"],
     demoLink: "https://craftify-project.myportfolio.com/",
+  },
+  {
+    id: 9,
+    title: "Lifestyle Fitness",
+    inProgress: false,
+    description:
+      "Projet réalisé dans le cadre de mon stage au sein d’une chaîne de salles de sport, à partir d’une maquette Figma. J’ai participé au développement d’une interface web responsive avec Next.js et Tailwind CSS, en veillant à respecter fidèlement le design prévu. Ce projet a été mené en équipe avec un travail de collaboration via Git et GitHub, incluant des revues de code pour assurer la qualité et la cohérence des modifications. J’ai également contribué à la mise en place d’une PWA afin d’améliorer l’expérience utilisateur, et j’avais pour objectif d’implémenter un système de réservation de cours pour enrichir les fonctionnalités de l’application.",
+    image: lifestyle,
+    imageList: [lifestyle],
+    technologies: ["Next.js", "Tailwind CSS", "PWA", "Git", "GitHub"],
   },
   //   {
   //     id: 7,

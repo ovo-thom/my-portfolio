@@ -87,32 +87,6 @@ export default function Projects() {
                   → Voir le projet en détail
                 </Link>
               </div>
-              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                <div className="flex items-baseline space-x-3 mb-2">
-                  <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                    La Casa Di Toma
-                  </h2>
-                  <span className="text-red-400 text-lg sm:text-2xl">
-                    <CiPizza />
-                  </span>
-                </div>
-                <p className="mb-4 text-gray-100 text-base">
-                  <span className="italic font-light text-blue-600 ">
-                    La Casa Di Toma :
-                  </span>{" "}
-                  Application web moderne pour restaurant italien construite
-                  avec React 18 et TypeScript. Le projet intègre un système de
-                  panier complet avec gestion d&apos;état via Context API,
-                  permettant l&apos;ajout, modification et suppression
-                  d&apos;articles.
-                </p>
-                <Link
-                  to="/projects/6"
-                  className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
-                >
-                  → Voir le projet en détail
-                </Link>
-              </div>
 
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="flex items-baseline space-x-3 mb-2">
@@ -137,7 +111,34 @@ export default function Projects() {
                   visualiser la situation financière de l’utilisateur.
                 </p>
                 <Link
-                  to="/projects/2"
+                  to="/projects/1"
+                  className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
+                >
+                  → Voir le projet en détail
+                </Link>
+              </div>
+
+              <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-baseline space-x-3 mb-2">
+                  <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
+                    La Casa Di Toma
+                  </h2>
+                  <span className="text-red-400 text-lg sm:text-2xl">
+                    <CiPizza />
+                  </span>
+                </div>
+                <p className="mb-4 text-gray-100 text-base">
+                  <span className="italic font-light text-blue-600 ">
+                    La Casa Di Toma :
+                  </span>{" "}
+                  Application web moderne pour restaurant italien construite
+                  avec React 18 et TypeScript. Le projet intègre un système de
+                  panier complet avec gestion d&apos;état via Context API,
+                  permettant l&apos;ajout, modification et suppression
+                  d&apos;articles.
+                </p>
+                <Link
+                  to="/projects/6"
                   className="text-gray-200 hover:text-white duration-300 border border-gray-600 hover:border-gray-400 px-3 py-1 rounded-md text-sm"
                 >
                   → Voir le projet en détail

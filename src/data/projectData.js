@@ -28,7 +28,8 @@ import recommandation from "../assets/la_casa_di_toma/recommandation.png";
 import panier from "../assets/la_casa_di_toma/panier.png";
 import contactFooter from "../assets/la_casa_di_toma/contactfooter.png";
 import notificationPush from "../assets/la_casa_di_toma/notification_push.png";
-import homepageFinelyia from "../assets/finelyia/homepage.png";
+// import homepageFinelyia from "../assets/finelyia/homepage.png";
+import homepageFinelyia from "../assets/finelyia/Finelyia.png";
 import transactionsFinelyia from "../assets/finelyia/transactions.png";
 import settingsFinelyia from "../assets/finelyia/settings.png";
 import homePageTimeElegance from "../assets/timeelegance/homePage_MainImage.png";
@@ -194,16 +195,16 @@ const projects = [
     // demoLink: "https://timeelegance.local",
   },
   {
-  id: 8,
-  title: "Craftify",
-  inProgress: false,
-  description:
-    "Craftify est un projet réalisé en équipe dans le cadre de ma formation chez BeCode. Il s’agit d’un site e-commerce développé avec React et Vite, intégrant des fonctionnalités comme la gestion du panier, les filtres de produits et une navigation fluide. Le projet n’est actuellement plus en ligne suite à l’arrêt de l’hébergement backend, mais un portfolio détaillé reste disponible pour présenter le travail réalisé.",
-  image: craftifyHome,
-  imageList: [craftifyHome],
-  technologies: ["React", "Vite", "Tailwind", "Team Project"],
-  demoLink: "https://craftify-project.myportfolio.com/",
-}
+    id: 8,
+    title: "Craftify",
+    inProgress: false,
+    description:
+      "Craftify est un projet réalisé en équipe dans le cadre de ma formation chez BeCode. Il s’agit d’un site e-commerce développé avec React et Vite, intégrant des fonctionnalités comme la gestion du panier, les filtres de produits et une navigation fluide. Le projet n’est actuellement plus en ligne suite à l’arrêt de l’hébergement backend, mais un portfolio détaillé reste disponible pour présenter le travail réalisé.",
+    image: craftifyHome,
+    imageList: [craftifyHome],
+    technologies: ["React", "Vite", "Tailwind", "Team Project"],
+    demoLink: "https://craftify-project.myportfolio.com/",
+  },
   //   {
   //     id: 7,
   //     title: "Daily Dashboard",

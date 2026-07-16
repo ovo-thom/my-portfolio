@@ -7,13 +7,13 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 
 import homepage from "../assets/popcornmovie/home_popcornmovie.png";
-import lifestyle from "../images/lifestyle.png";
+import homePageFinelyia from "../assets/finelyia/Finelyia.png";
 import laCasaDiToma from "../assets/la_casa_di_toma/homepage.png";
 import { LuPopcorn } from "react-icons/lu";
 import { CiPizza } from "react-icons/ci";
-import { MdFitnessCenter } from "react-icons/md";
 import { PiWatch } from "react-icons/pi";
 import timeElegance from "../assets/timeelegance/timeElegance_fullscreen.png";
+import { FaRegChartBar } from "react-icons/fa";
 
 import { EffectCube, Pagination } from "swiper/modules";
 
@@ -117,27 +117,27 @@ export default function Projects() {
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="flex items-baseline space-x-3 mb-2">
                   <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
-                    LifeStyle Fitness
+                    Finelyia
                   </h2>
                   <span className="text-indigo-400 text-lg sm:text-xl">
-                    <MdFitnessCenter />
+                    <FaRegChartBar />
                     <span className="absolute top-3 right-2 z-10 rounded-full border border-indigo-400/60 bg-indigo-500/10 px-2 py-1 text-xs font-medium text-indigo-300 backdrop-blur-sm">
-                      Projet professionnel
+                      Projet en cours
                     </span>
                   </span>
                 </div>
                 <p className="mb-4 text-gray-100 text-base">
                   <span className="italic font-light text-blue-600 ">
-                    LifeStyle fitness :
+                    Finelyia :
                   </span>{" "}
-                  LifeStyle Fitness : Projet réalisé dans le cadre de mon stage
-                  pour une chaîne de salles de sport. À partir d’une maquette
-                  Figma, j’ai développé une page web responsive avec Next.js et
-                  Tailwind CSS, en veillant à respecter le design et à intégrer
-                  un formulaire permettant aux utilisateurs d’obtenir un pass
-                  gratuit.
+                  Application web de gestion des finances personnelles
+                  développée avec React et Firebase. Le projet intègre un
+                  système d’authentification, le suivi des dépenses et des
+                  revenus, ainsi qu’un tableau de bord avec graphiques pour
+                  visualiser la situation financière de l’utilisateur.
                 </p>
               </div>
+
               <div className="py-4 mb-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
                 <div className="flex items-baseline space-x-3 mb-2">
                   <h2 className="text-xl sm:text-2xl font-semibold mb-2 text-white">
@@ -211,10 +211,10 @@ export default function Projects() {
                   <SwiperSlide className="flex justify-center items-center w-full h-full">
                     <div className="w-full h-full flex justify-center items-center">
                       <img
-                        src={lifestyle}
+                        src={homePageFinelyia}
                         alt="Lifestyle"
                         className="w-full h-full object-cover object-top cursor-pointer"
-                        onClick={() => openModal(lifestyle)}
+                        onClick={() => openModal(homePageFinelyia)}
                       />
                     </div>
                   </SwiperSlide>
